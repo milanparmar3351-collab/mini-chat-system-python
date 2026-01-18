@@ -100,15 +100,19 @@ if __name__ == "__main__":
 
     Milan = User("Milan")
     Rajdip = User("Rajdip")
+    kavy = user("kavy")
 
     Milan.join_chatroom(room)
     Rajdip.join_chatroom(room)
+    kavy.join_chatroom(room)
+    
 
     room.show_users()
 
     Milan.send_message("Hello everyone!")
     Rajdip.send_message("   ")      # empty message test
     Rajdip.send_message("Hi Milan!")
+    kavy.send_message("Hey Rajdip, what's up?")
 
     room.show_chat_history()
 
@@ -117,3 +121,4 @@ if __name__ == "__main__":
 
     Milan.leave_chatroom()
     Rajdip.leave_chatroom()
+    kavy.leave_chatroom()
